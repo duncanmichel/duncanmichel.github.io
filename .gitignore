@@ -1,0 +1,17 @@
+# Hugo build output — GitHub Actions generates this, never commit it
+/public/
+
+# Hugo's resource cache (generated files, fingerprinted assets)
+/resources/_gen/
+
+# Hugo's lock file
+.hugo_build.lock
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor noise
+.vscode/
+.idea/
+*.swp
