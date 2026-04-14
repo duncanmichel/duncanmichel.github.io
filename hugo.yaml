@@ -1,0 +1,74 @@
+baseURL: "https://duncanmichel.github.io/"
+title: "Duncan Michel"
+paginate: 10
+theme: PaperMod
+languageCode: en-us
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "Duncan Michel"
+  description: "OSCP journey, CTF write-ups, and security research."
+  author: "Duncan Michel"
+  
+  defaultTheme: dark          # dark | light | auto
+  ShowReadingTime: true
+  ShowShareButtons: false     # turn off for privacy
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true   # great for technical posts
+  ShowToc: true               # table of contents on long write-ups
+  TocOpen: false
+
+  profileMode:
+    enabled: false            # set true for a landing page with avatar
+
+  homeInfoParams:
+    Title: "Hi, I'm Duncan Michel"
+    Content: >
+      Security researcher documenting my OSCP journey,
+      CTF write-ups, and vulnerability research.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/duncanmichel"
+    - name: x-twitter
+      url: "https://x.com/ph03nix_0x90"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/duncanmichel/"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+
+taxonomies:
+  tag: tags
+  category: categories
+
+markup:
+  highlight:
+    noClasses: false          # required for proper syntax highlighting
+    lineNos: true             # line numbers in code blocks — great for write-ups
+    style: monokai
